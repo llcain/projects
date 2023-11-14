@@ -2,3 +2,7 @@ $primary-color: #da680f; /* hex code (218, 104, 15) */
 $secondary-color: #FFB347; /* hex code (255, 179, 71) */
 $third-color: #0f81da;
 $fourth-color: #4793ff;
+
+body {
+    background-color: $fourth-color;
+}
