@@ -15,6 +15,7 @@ body {
 }
 
 .container {
+    height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 2fr 4fr 2fr;
@@ -22,6 +23,7 @@ body {
     "header header header"
     "navbar main aside"
     "footer footer footer";
+    
 }
 
 .header {
