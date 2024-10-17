@@ -8,37 +8,4 @@
 
 body {
   background-color: #4793ff;
-}
-
-.container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 2fr 4fr 2fr;
-  grid-template-areas: "header header header" "navbar main aside" "footer footer footer";
-}
-
-.header {
-  background-color: #da680f;
-  grid-area: header;
-}
-
-.navbar {
-  background-color: #FFB347;
-  grid-area: navbar;
-}
-
-.main-content {
-  background-color: purple;
-  grid-area: main;
-}
-
-.aside-bar {
-  background-color: tan;
-  grid-area: aside;
-}
-
-.footer {
-  background-color: aqua;
-  grid-area: footer;
 }/*# sourceMappingURL=styles.css.map */
