@@ -1,14 +1,23 @@
-// create array
-const samples = ["My Main Squeeze Lotion", "Shampoo", "lipstic"];
+document.querySelector('#push').onclick = function() {
+    if(document.querySelector('input').value.length == 0) {
+        alert("Please enter customer name");
+    } else {
+        document.querySelector("#tasks").innerHTML += `
+            <div class="task">
+                <span id="taskname">
+                    ${document.querySelector('input').value}
+                </span>
+                <button class="delete">Delete</button>
+            </div>
+        `;
+        const inputValue = document.getElementById('myInput');
+        inputValue.value = '';
 
-// grab ul list
-let list = document.getElementById("list-items");
-
-for(i=0; i < samples.length; i++) {
-    // create li element
-    let li = document.createElement('li');
-    li.innerText = samples[i];
-    // append li to ul list
-    list.appendChild(li);
+        var current_tasks = document.getElementsByClassName('delete');
+        for(var i=0; i < current_tasks.length; i++) {
+            current_tasks[i].onclick = function() {
+                this.parentNode.remove();
+            }
+        }
+    }
 }
-
